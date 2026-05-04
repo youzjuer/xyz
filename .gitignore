@@ -16,6 +16,10 @@ runs/**
 !logs/.gitkeep
 !runs/.gitkeep
 
+# Project outputs
+projects/*/runs/**
+!projects/*/runs/.gitkeep
+
 # Local Claude / editor state
 .claude/
 .vscode/
