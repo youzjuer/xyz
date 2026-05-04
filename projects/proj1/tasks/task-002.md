@@ -5,7 +5,7 @@
 - ID: `task-002`
 - Project: `proj1`
 - Title: 排版前两页参考版
-- Status: pending
+- Status: completed
 - Owner: Claude
 
 ## Goal

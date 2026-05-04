@@ -5,7 +5,8 @@
 - ID: `proj1`
 - Name: 导演参考图整理
 - Goal: 为导演整理可交付给新加坡 casting 的照片参考与文字形象描述
-- Status: active
+- Status: paused
+- Closed note: 2026-05-04 用户确认此项目暂时终结。
 
 ## Brief
 

@@ -5,7 +5,7 @@
 - ID: `task-001`
 - Project: `proj1`
 - Title: 整理参考方向与关键词
-- Status: pending
+- Status: completed
 - Owner: Claude
 
 ## Goal
