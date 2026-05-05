@@ -22,7 +22,7 @@
 
 ## Index
 
-- 暂无长期记忆。
+- [Knowledge base](wiki/index.md) — Obsidian-style long-term knowledge vault entry point.
 
 ## 维护节奏
 

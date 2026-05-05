@@ -1,0 +1,21 @@
+{
+  "name": "aistock-wiki",
+  "version": 1,
+  "root": "wiki",
+  "created": "2026-05-05",
+  "folders": [
+    "concepts",
+    "entities",
+    "skills",
+    "references",
+    "synthesis",
+    "journal",
+    "projects",
+    "_archives",
+    "_raw",
+    "templates"
+  ],
+  "link_style": "obsidian-wikilinks",
+  "frontmatter_required": true,
+  "provenance_required_for_references": true
+}
