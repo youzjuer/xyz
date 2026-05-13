@@ -1,8 +1,16 @@
 {
   "name": "aistock-wiki",
-  "version": 1,
+  "version": 2,
   "root": "wiki",
   "created": "2026-05-05",
+  "updated": "2026-05-13",
+  "pattern": {
+    "name": "Obsidian LLM Wiki",
+    "inspired_by": [
+      "https://github.com/Ar9av/obsidian-wiki",
+      "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+    ]
+  },
   "folders": [
     "concepts",
     "entities",
@@ -15,7 +23,52 @@
     "_raw",
     "templates"
   ],
+  "core_files": [
+    "index.md",
+    "hot.md",
+    "log.md",
+    ".manifest.json"
+  ],
   "link_style": "obsidian-wikilinks",
   "frontmatter_required": true,
-  "provenance_required_for_references": true
+  "required_frontmatter_fields": [
+    "id",
+    "title",
+    "type",
+    "category",
+    "status",
+    "created",
+    "updated",
+    "tags",
+    "aliases",
+    "source",
+    "sources",
+    "provenance",
+    "confidence",
+    "lifecycle",
+    "summary",
+    "links"
+  ],
+  "provenance_required_for_references": true,
+  "workflows": [
+    "wiki-status",
+    "wiki-ingest",
+    "wiki-query",
+    "wiki-lint",
+    "wiki-rebuild"
+  ],
+  "active_focus": [
+    "projects/proj2-stock-recommendation",
+    "concepts/stock-recommendation-framework",
+    "concepts/a-share-sentiment-market",
+    "references/microsoft-qlib-financial-quant-platform",
+    "references/anthropic-financial-services",
+    "synthesis/financial-services-agent-architecture"
+  ],
+  "maintenance": {
+    "index_review": "weekly",
+    "hot_review": "weekly",
+    "lint_review": "monthly",
+    "archive_policy": "prefer archive over delete"
+  }
 }

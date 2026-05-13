@@ -2,9 +2,10 @@
 id: 20260505-a-share-sentiment-market
 title: A-share Sentiment and Policy Market
 type: concept
+category: investing-framework
 status: active
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 tags:
   - market/a-share
   - domain/investing
@@ -13,10 +14,25 @@ aliases:
   - A股情绪市
   - A股政策市
 source: self
+sources:
+  - projects/proj2/runs/task-007/a-share-sentiment-framework-v2.md
 provenance:
   - user-stated: A股可能对于基本面的参考没有美股大，更可能是情绪市场和政策市场
   - date: 2026-05-05
   - agent-assisted: Claude
+  - updated: 2026-05-11 LLM Wiki metadata normalization
+confidence:
+  base: medium
+  notes: Market-behavior framework based on user hypothesis and project analysis; validate with current market data.
+lifecycle:
+  stage: active
+  review: monthly
+summary: A-share short-term framework emphasizing policy, theme, sentiment, and capital flow over pure fundamentals.
+links:
+  concepts:
+    - concepts/stock-recommendation-framework
+  projects:
+    - projects/proj2-stock-recommendation
 ---
 
 # A-share Sentiment and Policy Market

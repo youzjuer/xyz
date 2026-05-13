@@ -2,9 +2,10 @@
 id: 20260505-proj2-stock-recommendation
 title: Proj2 Stock Recommendation
 type: project
+category: investing-project
 status: active
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-13
 tags:
   - project/proj2
   - domain/investing
@@ -12,10 +13,31 @@ tags:
 aliases:
   - 股票推荐项目
 source: self
+sources:
+  - projects/proj2/PROJECT.md
+  - projects/proj2/NOTES.md
+  - projects/proj2/runs/
 provenance:
   - agent-assisted: Claude
   - date: 2026-05-05
   - basis: repo project files and user discussion
+  - updated: 2026-05-11 LLM Wiki metadata normalization
+confidence:
+  base: high
+  notes: Project map points to local project files; verify current tasks in projects/proj2 when acting.
+lifecycle:
+  stage: active
+  review: weekly
+summary: Knowledge map for the stock recommendation project and its reusable investment frameworks.
+links:
+  concepts:
+    - concepts/stock-recommendation-framework
+    - concepts/a-share-sentiment-market
+  references:
+    - references/microsoft-qlib-financial-quant-platform
+    - references/anthropic-financial-services
+  synthesis:
+    - synthesis/financial-services-agent-architecture
 ---
 
 # Proj2 Stock Recommendation
@@ -31,6 +53,8 @@ provenance:
 
 - [[concepts/stock-recommendation-framework]]
 - [[concepts/a-share-sentiment-market]]
+- [[synthesis/financial-services-agent-architecture]]
+- [[references/anthropic-financial-services]]
 
 ## Current operating principle
 

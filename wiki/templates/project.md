@@ -2,29 +2,38 @@
 id:
 title:
 type: project
+category:
 status: active
 created:
 updated:
 tags: []
 aliases: []
 source: self
+sources: []
 provenance: []
+confidence:
+  base: medium
+  notes:
+lifecycle:
+  stage: active
+  review:
+summary:
+links:
+  concepts: []
+  references: []
+  synthesis: []
 ---
 
-# Project
+# Title
+
+## Summary
 
 ## Repo project
 
-- Project file:
-- Task files:
-- Run outputs:
-
 ## Knowledge map
 
-- [[]]
+## Current operating principles
 
-## Current questions
+## Related outputs
 
-## Decisions
-
-## References
+## Open questions

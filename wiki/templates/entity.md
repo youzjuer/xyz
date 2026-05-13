@@ -2,25 +2,40 @@
 id:
 title:
 type: entity
+category:
 status: draft
 created:
 updated:
 tags: []
 aliases: []
 source: self
+sources: []
 provenance: []
+confidence:
+  base: medium
+  notes:
+lifecycle:
+  stage: draft
+  review:
+summary:
+links:
+  related: []
 ---
 
-# Name
+# Title
 
-## What this is
+## Summary
+
+## Identity
 
 ## Key facts
 
-## Relationships
+## Relevance
 
-- Related concepts:
-- Related projects:
-- Related references:
+## Sources
 
-## Notes
+## Related
+
+- [[]]
+
+## Open questions

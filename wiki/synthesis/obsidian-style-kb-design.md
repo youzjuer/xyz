@@ -2,19 +2,39 @@
 id: 20260505-obsidian-style-kb-design
 title: Obsidian-style Knowledge Base Design
 type: synthesis
+category: kb-design
 status: active
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 tags:
   - kb/design
   - tool/obsidian
+  - pattern/llm-wiki
 aliases:
   - 知识库设计
 source: self
+sources:
+  - https://github.com/Ar9av/obsidian-wiki
+  - https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 provenance:
   - reference: https://github.com/Ar9av/obsidian-wiki
   - agent-assisted: Claude
   - date: 2026-05-05
+  - updated: 2026-05-11 LLM Wiki restructuring
+confidence:
+  base: high
+  notes: Local design decision for this repository's wiki structure.
+lifecycle:
+  stage: active
+  review: quarterly
+summary: Design rationale for keeping wiki as durable knowledge source separate from projects, rag, and memory.
+links:
+  skills:
+    - skills/knowledge-ingest-workflow
+    - skills/wiki-status
+    - skills/wiki-ingest
+  projects:
+    - projects/proj2-stock-recommendation
 ---
 
 # Obsidian-style Knowledge Base Design
