@@ -5,7 +5,7 @@ type: project
 category: investing-project
 status: active
 created: 2026-05-05
-updated: 2026-05-13
+updated: 2026-05-14
 tags:
   - project/proj2
   - domain/investing
@@ -33,6 +33,12 @@ links:
   concepts:
     - concepts/stock-recommendation-framework
     - concepts/a-share-sentiment-market
+    - concepts/dynamic-stock-pricing-analysis
+  stocks:
+    - stocks/byd/index
+    - stocks/byd/valuation-buy-zones
+    - stocks/nhwa-pharma/index
+    - stocks/nhwa-pharma/valuation-buy-zones
   references:
     - references/microsoft-qlib-financial-quant-platform
     - references/anthropic-financial-services
@@ -52,9 +58,14 @@ links:
 ## Knowledge map
 
 - [[concepts/stock-recommendation-framework]]
+- [[concepts/dynamic-stock-pricing-analysis]]
 - [[concepts/a-share-sentiment-market]]
 - [[synthesis/financial-services-agent-architecture]]
 - [[references/anthropic-financial-services]]
+- [[stocks/byd/index]]
+- [[stocks/byd/valuation-buy-zones]]
+- [[stocks/nhwa-pharma/index]]
+- [[stocks/nhwa-pharma/valuation-buy-zones]]
 
 ## Current operating principle
 

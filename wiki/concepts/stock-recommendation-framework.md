@@ -5,7 +5,7 @@ type: concept
 category: investing-framework
 status: active
 created: 2026-05-05
-updated: 2026-05-13
+updated: 2026-05-14
 tags:
   - domain/investing
   - market/a-share
@@ -35,6 +35,7 @@ summary: Multi-layer stock and ETF recommendation framework covering fundamental
 links:
   concepts:
     - concepts/a-share-sentiment-market
+    - concepts/dynamic-stock-pricing-analysis
   synthesis:
     - synthesis/financial-services-agent-architecture
   references:
@@ -47,12 +48,13 @@ links:
 
 ## Summary
 
-The stock recommendation system has four layers:
+The stock recommendation system has five layers:
 
 1. A general multi-factor framework for medium-term or balanced recommendations.
 2. An A-share short-term sentiment/policy framework for one-month elasticity trades.
 3. An ETF position-management framework that combines holdings, valuation, policy/international context, and capital flow.
-4. A financial-agent architecture layer for making research workflows auditable: reusable skills, explicit source hierarchy, artifact contracts, and human review gates.
+4. A dynamic stock-pricing layer that separates spreadsheet fair value from realistic market trading range, expectation gaps, scenario probability, and executable buy zones.
+5. A financial-agent architecture layer for making research workflows auditable: reusable skills, explicit source hierarchy, artifact contracts, and human review gates.
 
 ## Framework versions
 
@@ -114,6 +116,27 @@ Position-size rules:
 - Treat it as a Hong Kong technology/growth beta tool, not a pure AI ETF.
 - If the user is underwater but position weight is not high, holding is acceptable; avoid blind averaging down unless valuation, capital flow, and portfolio weight all support it.
 
+### v4: dynamic stock-pricing / market-expectations framework
+
+Source: user correction on the BYD buy-zone analysis, captured in [[concepts/dynamic-stock-pricing-analysis]].
+
+Best for:
+
+- individual stock analysis where a static PE table is too shallow;
+- leaders with narrative, scarcity, global optionality, policy support, or institutional ownership;
+- deciding whether an attractive low buy price is actually realistic;
+- staged execution plans that distinguish first buy, add, and stress opportunity zones.
+
+Core workflow:
+
+1. Identify what the market already knows and has likely priced.
+2. Define the real disagreement between bulls and bears.
+3. Separate spreadsheet fair value from realistic trading range.
+4. Build base / bull / bear / stress scenarios and rank their likelihood.
+5. Set reality-adjusted buy zones instead of one static conservative price.
+6. Tie each zone to data triggers that move the acceptable price up or down.
+7. Produce a staged position plan, not only a valuation table.
+
 ### v1: multi-factor / balanced
 
 Source: `projects/proj2/runs/task-001/recommendation-framework-v1.md`
@@ -137,6 +160,7 @@ Best for:
 ## Related concepts
 
 - [[concepts/a-share-sentiment-market]]
+- [[concepts/dynamic-stock-pricing-analysis]]
 - [[synthesis/financial-services-agent-architecture]]
 - [[references/anthropic-financial-services]]
 - [[projects/proj2-stock-recommendation]]

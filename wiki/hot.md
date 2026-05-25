@@ -5,7 +5,7 @@ type: index
 category: navigation
 status: active
 created: 2026-05-11
-updated: 2026-05-13
+updated: 2026-05-24
 tags:
   - kb/navigation
   - kb/hot
@@ -28,24 +28,40 @@ links:
   concepts:
     - concepts/stock-recommendation-framework
     - concepts/a-share-sentiment-market
+    - concepts/dynamic-stock-pricing-analysis
   references:
     - references/microsoft-qlib-financial-quant-platform
     - references/anthropic-financial-services
   synthesis:
     - synthesis/financial-services-agent-architecture
+  stocks:
+    - stocks/byd/index
+    - stocks/byd/valuation-buy-zones
+    - stocks/nhwa-pharma/index
+    - stocks/nhwa-pharma/valuation-buy-zones
   projects:
     - projects/proj2-stock-recommendation
+    - projects/proj3-quant-trading-system
 ---
 
 # Hot Knowledge
 
-当前高频使用的知识入口。Agent 查询投资、ETF、量化、知识库结构时优先从这里开始。
+当前高频使用的知识入口。Agent 查询投资、ETF、个股长期分析、量化、知识库结构时优先从这里开始。
 
 ## Investing and ETF analysis
 
 - [[concepts/stock-recommendation-framework]] — 股票/ETF 推荐与仓位管理框架，包含 ETF 资金流分析。
+- [[concepts/dynamic-stock-pricing-analysis]] — 动态个股定价方法：先判断市场 pricing 和场景概率，再给现实买点。
 - [[concepts/a-share-sentiment-market]] — A 股短期情绪/政策市判断模型。
 - [[projects/proj2-stock-recommendation]] — 股票推荐项目知识地图。
+- [[projects/proj3-quant-trading-system]] — 量化交易系统项目知识地图。
+
+## Individual stock analysis
+
+- [[stocks/byd/index]] — 比亚迪长期个股档案：好公司但当前估值安全边际不足。
+- [[stocks/byd/valuation-buy-zones]] — 比亚迪 A/H 股买点区间与触发条件。
+- [[stocks/nhwa-pharma/index]] — 恩华药业长期个股档案：中枢神经用药龙头，估值不贵但受政策/安全风险压制。
+- [[stocks/nhwa-pharma/valuation-buy-zones]] — 恩华药业买点区间与触发条件。
 
 ## Financial quant and agent architecture
 

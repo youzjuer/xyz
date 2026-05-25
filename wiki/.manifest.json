@@ -3,7 +3,7 @@
   "version": 2,
   "root": "wiki",
   "created": "2026-05-05",
-  "updated": "2026-05-13",
+  "updated": "2026-05-24",
   "pattern": {
     "name": "Obsidian LLM Wiki",
     "inspired_by": [
@@ -18,6 +18,7 @@
     "references",
     "synthesis",
     "journal",
+    "stocks",
     "projects",
     "_archives",
     "_raw",
@@ -59,11 +60,17 @@
   ],
   "active_focus": [
     "projects/proj2-stock-recommendation",
+    "projects/proj3-quant-trading-system",
     "concepts/stock-recommendation-framework",
+    "concepts/dynamic-stock-pricing-analysis",
     "concepts/a-share-sentiment-market",
     "references/microsoft-qlib-financial-quant-platform",
     "references/anthropic-financial-services",
-    "synthesis/financial-services-agent-architecture"
+    "synthesis/financial-services-agent-architecture",
+    "stocks/byd/index",
+    "stocks/byd/valuation-buy-zones",
+    "stocks/nhwa-pharma/index",
+    "stocks/nhwa-pharma/valuation-buy-zones"
   ],
   "maintenance": {
     "index_review": "weekly",

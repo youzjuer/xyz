@@ -5,7 +5,7 @@ type: index
 category: navigation
 status: active
 created: 2026-05-05
-updated: 2026-05-13
+updated: 2026-05-24
 tags:
   - kb/navigation
 aliases:
@@ -29,6 +29,12 @@ summary: Main entry point for the Obsidian-style LLM Wiki.
 links:
   hot:
     - hot
+  stocks:
+    - stocks/README
+    - stocks/byd/index
+    - stocks/nhwa-pharma/index
+  concepts:
+    - concepts/dynamic-stock-pricing-analysis
   operations:
     - skills/wiki-status
     - skills/wiki-ingest
@@ -51,7 +57,11 @@ links:
 ## Current focus
 
 - [[projects/proj2-stock-recommendation]] — 股票推荐项目知识地图。
+- [[projects/proj3-quant-trading-system]] — 量化交易系统项目知识地图。
 - [[concepts/stock-recommendation-framework]] — 股票/ETF 推荐框架，包含 ETF 仓位与资金流分析。
+- [[concepts/dynamic-stock-pricing-analysis]] — 动态个股定价方法：市场预期、场景概率和现实买点。
+- [[stocks/byd/index]] — 比亚迪长期个股分析档案与买点框架。
+- [[stocks/nhwa-pharma/index]] — 恩华药业长期个股分析档案与买点框架。
 - [[references/microsoft-qlib-financial-quant-platform]] — Microsoft Qlib 金融量化研究平台调研。
 - [[references/anthropic-financial-services]] — Anthropic 金融服务 Agent / 插件 / Managed Agent 参考仓库调研。
 - [[synthesis/financial-services-agent-architecture]] — 金融分析 Agent 的可审计架构模式。
@@ -65,6 +75,7 @@ links:
 - `references/`：带来源的文章、报告、网页、书籍、论文笔记。
 - `synthesis/`：综合判断、决策 memo、知识地图。
 - `journal/`：日期型观察、临时记录、阶段性市场记录。
+- `stocks/`：个股长期分析仓库，每个股票独立子目录。
 - `projects/`：项目知识地图，链接到 `projects/<project>/`。
 - `_raw/`：未加工输入，仅放安全、轻量、可提交材料。
 - `_archives/`：过期或废弃知识。
