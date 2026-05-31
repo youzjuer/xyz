@@ -39,6 +39,50 @@ Current limitations:
 - Slippage and order queue effects are not modeled.
 - Sector/theme and event/news validation are not yet included.
 
+## Major Decision Factors
+
+The stock signal must not be evaluated in isolation. Before using the mechanical stock pick, the strategy should judge whether the market environment supports next-day continuation.
+
+The major decision layer should answer:
+
+- Is the market in an incremental-liquidity phase or only a stock-fund rotation phase?
+- Is broad risk appetite improving or deteriorating?
+- Are overseas markets supporting or suppressing A-share risk appetite?
+- Is the selected sector receiving fresh capital, or is it only yesterday's crowded trade?
+- Is the candidate still likely to have T+1 afternoon buying demand?
+
+If the major decision layer is negative, the strategy should downgrade the signal to observation or skip the trade, even if the individual stock ranks first mechanically.
+
+## Overseas Market Risk Gate
+
+US market changes should be included as a pre-trade environment filter. They should not replace A-share stock selection, but they can affect whether a high-momentum A-share signal is tradable.
+
+Main transmission channels:
+
+- US risk appetite: Nasdaq and S&P 500 declines can pressure A-share growth and technology names.
+- US Treasury yields: rising 10-year yields tend to pressure high-valuation growth stocks.
+- US dollar and offshore RMB: USD strength and CNH weakness can reduce foreign-risk appetite toward China assets.
+- US semiconductor and AI leaders: moves in Nvidia, the Philadelphia Semiconductor Index, and major AI names can affect A-share semiconductor, computing-power, electronics, and robotics themes.
+- China ADRs and Hong Kong technology names: weakness there can spill into related A-share sentiment.
+
+Daily overseas inputs to record before trading:
+
+- Nasdaq Composite or Nasdaq 100 daily change.
+- S&P 500 daily change.
+- Philadelphia Semiconductor Index daily change.
+- China ADR / Golden Dragon China Index daily change where available.
+- US 10-year Treasury yield change.
+- US Dollar Index or USD/CNH direction.
+- Hang Seng Tech opening behavior.
+
+Suggested gate:
+
+- If US equities are sharply weaker, US yields are rising, and CNH is weakening, reduce position or skip high-valuation growth and technology momentum signals.
+- If Nasdaq/semiconductors are strong and CNH is stable, technology-growth signals may be allowed, subject to A-share liquidity and sector confirmation.
+- If overseas signals are mixed, default to A-share internal liquidity, breadth, and sector rotation conditions.
+
+This gate is especially important for the current strategy because the v3 signal chases short-term strength. In a weak global-risk environment, T-day strength can become T+1 profit-taking rather than continuation.
+
 ## Baseline Signal
 
 The main model is a rule-based ranking score. It favors short-term strength and liquidity expansion.
